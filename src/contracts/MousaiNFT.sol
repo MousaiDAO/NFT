@@ -91,6 +91,7 @@ contract MousaiNFT is ERC721, MinterRole, IERC2981, Ownable{
       return true;
   }
   
+  // Minting function for NFT
   function mint(address _to, string memory _tokenURI) public onlyMinter returns (bool) {
       _mintWithTokenURI(_to, _tokenURI);
       return true;
